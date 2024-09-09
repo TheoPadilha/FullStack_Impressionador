@@ -1,0 +1,43 @@
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: "Arial", sans-serif;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 0.6;
+}
+h2 {
+  font-size: 32px;
+  line-height: 0.4;
+
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 0.3;
+
+}
+p {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 12px;
+  line-height: 0;
+
+}
+.realce{
+    font-style: italic;
+    font-weight: bold;
+}
+.caixa-alta{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    color: red;
+}
