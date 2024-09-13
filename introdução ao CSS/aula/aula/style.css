@@ -38,3 +38,20 @@ h4 {
   font-style: italic;
   color: red;
 }
+
+.color {
+  color: #4f9e2f;
+  color: blue;
+  color: rgb(193, 218, 37);
+}
+
+a {
+  font-style: italic;
+  text-decoration: none;
+  color: blueviolet;
+  font-weight: bold;
+  text-decoration:dotted;
+  text-decoration-line: underline;
+  text-decoration-color:black ;
+  font-size: 18px;
+}
