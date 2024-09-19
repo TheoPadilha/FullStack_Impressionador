@@ -13,11 +13,11 @@ strong {
 h2 {
   font-weight: 100;
 }
-.botao{
-    font-size: 24px;
-    font-weight: 700;
-    text-decoration: none;
-    color: #404040;
+.botao {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #404040;
 }
 
 /* Cabeçalho */
@@ -119,28 +119,32 @@ span.oqfalam-h2 {
 }
 /* Na midia */
 
-.h3-na_midia{
-    font-size: 35px;
-    font-weight: 100;
+.h3-na_midia {
+  font-size: 35px;
+  font-weight: 100;
 }
 
 /* Blog # */
-.h2-blog{
-    font-size: 35px;
-    color: #fff;
+.h2-blog {
+  font-size: 35px;
+  color: #fff;
   background-color: darkorange;
 }
-.link_pg_blog{
-    color: orange;
-    text-decoration: none;
+.link_pg_blog {
+  color: orange;
+  text-decoration: none;
 }
-.link_video{
-    font-size: 24px;
-    color: #404040;
-    text-decoration: none;
-    font-weight: 600;
+.link_video {
+  font-size: 24px;
+  color: #404040;
+  text-decoration: none;
+  font-weight: 600;
 }
-.p-blog{
-    font-size: 17px;
+.p-blog {
+  font-size: 17px;
 }
 /* como # pode ajudar */
+
+strong {
+  color: orangered;
+}
