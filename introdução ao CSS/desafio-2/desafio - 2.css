@@ -1,54 +1,146 @@
-body{
-    font-family: "Montserrat", sans-serif;
+/* Global */
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #404040;
+}
+p {
+  font-size: 16px;
 }
 
-li a{
-    font-size: 14px;
-    color: #112e61;
-    text-decoration: none;
+strong {
+  font-weight: 600;
 }
-h1 {
-    font-size: 35px;
-    color: #404040;
+h2 {
+  font-weight: 100;
 }
-.pri_text{
-    color: #404040;
-    font-size: 19px;
-}
-
-.link_do_hero{
+.botao{
     font-size: 24px;
-    color: #fff;
-    background-color: darkorange;
-    font-weight: bold;
+    font-weight: 700;
     text-decoration: none;
-}
-.realce-roxo-rome{
-    color: #7a40be;
-}
-.Cor_font{
     color: #404040;
-}
-.titcontg{
-    color: #fff;
-    background-color: #7a40be;
-    font-size: 23px;
-}
-.link_font{
-    color: #404040;
-    text-decoration: none;
-    font-size: 19px;
-}
-.fig_amarela{
-    background-color: gold;
 }
 
-.empresa{
-    color: #005e88;
+/* Cabeçalho */
+
+.item_lista a {
+  font-size: 14px;
+  color: #112e61;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Hero */
+
+h1 {
+  font-size: 35px;
+  color: #404040;
+  font-weight: 600;
+}
+.pri_text {
+  color: #404040;
+  font-size: 19px;
+}
+
+.link_do_hero {
+  font-size: 24px;
+  color: #fff;
+  background-color: darkorange;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Gratuitos */
+.Cor_font {
+  color: #404040;
+}
+.titcontg {
+  color: #fff;
+  background-color: #7a40be;
+  font-size: 23px;
+  font-weight: 700;
+}
+.link_font {
+  color: #404040;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.font2 {
+  font-size: 35px;
+  color: #404040;
+  font-weight: 400;
+}
+.realce-roxo-rome {
+  color: #7a40be;
+  font-weight: 600;
+}
+/* h2.font2 span {
+    color: #7a40be;
+    font-weight: 600;
+    } */
+
+/* Diferenciais */
+.fig_amarela {
+  background-color: gold;
+}
+p.p_diferenciais {
+  font-size: 19px;
+}
+
+h3.tit_diferenciais {
+  color: #005e88;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* .font2 {
+  font-size: 35px;
+  color: #404040;
+  font-weight: 400; */
+
+.font2 strong {
+  font-weight: 600;
+}
+
+.empresa {
+  color: #005e88;
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+/* seção oq falam */
+span.oqfalam-h2 {
+  font-weight: 600;
+}
+.h2-oqfalam {
+  font-size: 35px;
+}
+/* Na midia */
+
+.h3-na_midia{
+    font-size: 35px;
+    font-weight: 100;
+}
+
+/* Blog # */
+.h2-blog{
+    font-size: 35px;
+    color: #fff;
+  background-color: darkorange;
+}
+.link_pg_blog{
+    color: orange;
     text-decoration: none;
-    font-size: 35px;
 }
-.font2{
-    font-size: 35px;
+.link_video{
+    font-size: 24px;
     color: #404040;
+    text-decoration: none;
+    font-weight: 600;
 }
+.p-blog{
+    font-size: 17px;
+}
+/* como # pode ajudar */
