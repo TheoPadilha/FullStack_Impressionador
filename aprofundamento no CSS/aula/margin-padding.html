@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin e Padding</title>
+  </head>
+  <body>
+    <style>
+      p {
+        /* Todos os lados  */
+        margin: 10px;
+
+        /* Em cima e em baixo 10px,de um lado e do outro 25px. */
+        margin: 10px 25px;
+
+        /* Cada lado separadamente. Em cima 10, Direita 25, Embaixo 40, Esquerda 17.*/
+        margin: 10px 25px 40px 17px;
+      }
+      #p {
+        background-color: green;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+      }
+
+      p {
+        background-color: yellow;
+      }
+      p {
+        /* Todos os lados  */
+        padding: 10px;
+
+        /* Em cima e em baixo 10px,de um lado e do outro 25px. */
+        padding: 10px 25px;
+
+        /* Cada lado separadamente. Em cima 10, Direita 25, Embaixo 40, Esquerda 17.*/
+        padding: 10px 25px 40px 17px;
+      }
+    </style>
+    <div>
+      <p>Paragrafo 1</p>
+      <p>Paragrafo 2</p>
+      <p id="p">Paragrafo 3</p>
+    </div>
+  </body>
+</html>
