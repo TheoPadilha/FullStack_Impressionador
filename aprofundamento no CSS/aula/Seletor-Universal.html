@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seletor Universal</title>
+    <style>
+      /*
+        Seletor Universal (*):
+        - O seletor universal aplica estilos a todos os elementos do documento.
+        - Neste exemplo, ele está sendo usado para remover o `margin` e o `padding`*/
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Definindo o font-size como 62.5% para que 1rem = 10px */
+      html {
+        font-size: 62.5%;
+      }
+
+      /* 
+        Estilizando o corpo do documento:
+        - Fonte sem serifa (sans-serif)
+        - Cor do texto padrão: cinza escuro (#333)
+      */
+      body {
+        font-family: sans-serif; /* Definindo uma fonte genérica */
+        color: #333; /* Cor do texto */
+      }
+
+      /* 
+        Estilo do título principal (h1):
+        - Espaçamento inferior de 2rem (20px)
+        - Tamanho da fonte: 3.2rem (32px)
+      */
+      h1 {
+        margin-bottom: 2rem;
+        font-size: 3.2rem; /* 32px */
+      }
+
+      /* 
+        Estilo do subtítulo (h2):
+        - Espaçamento inferior de 1rem (10px)
+        - Tamanho da fonte: 2.4rem (24px)
+      */
+      h2 {
+        margin-bottom: 1rem;
+        font-size: 2.4rem; /* 24px */
+      }
+
+      /* 
+        Estilo do parágrafo (p):
+        - Tamanho da fonte: 1.6rem (16px)
+      */
+      p {
+        font-size: 1.6rem; /* 16px */
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Meu título</h1>
+      <h2>Meu subtítulo</h2>
+      <p>Meu parágrafo</p>
+    </div>
+  </body>
+</html>

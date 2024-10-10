@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-classe</title>
+    <style>
+      /*
+        LVHA: Link, Visited, Hover, Active
+        Essas pseudo-classes são usadas para estilizar os diferentes estados de um link:
+        - :link: Estilo do link padrão (não visitado)
+        - :visited: Estilo para links que já foram visitados
+        - :hover: Estilo quando o usuário passa o mouse sobre o link
+        - :active: Estilo quando o link está sendo clicado
+      */
+
+      /* Estilo para links não visitados */
+      a:link {
+        color: darkblue; /* Cor azul escura para links normais */
+        font-family: sans-serif; /* Fonte sans-serif para o texto do link */
+        text-decoration: none; /* Remove o sublinhado padrão */
+      }
+
+      /* Estilo para links já visitados */
+      a:visited {
+        color: rebeccapurple; /* Cor púrpura para links já visitados */
+        font-style: italic; /* Aplicar estilo itálico a links visitados */
+      }
+
+      /* Estilo para links ao passar o mouse sobre eles */
+      a:hover {
+        color: brown; /* Muda a cor para marrom quando o mouse está sobre o link */
+        font-weight: 700; /* Aumenta o peso da fonte (bold) ao passar o mouse */
+      }
+
+      /* Estilo para links enquanto estão sendo clicados */
+      a:active {
+        color: black; /* O link fica preto ao ser clicado */
+        font-size: 50px; /* Aumenta o tamanho da fonte durante o clique */
+      }
+
+      /* 
+        Estilo para o parágrafo quando o mouse estiver sobre ele.
+        Isso demonstra que as pseudo-classes podem ser aplicadas a qualquer elemento interativo.
+      */
+      p:hover {
+        color: blue; /* O texto do parágrafo fica azul ao passar o mouse */
+        font-size: 32px; /* O tamanho da fonte aumenta para 32px */
+      }
+    </style>
+  </head>
+  <body>
+    <p>Meu parágrafo</p>
+    <a href="https://www.google.com">Minha âncora</a>
+  </body>
+</html>
