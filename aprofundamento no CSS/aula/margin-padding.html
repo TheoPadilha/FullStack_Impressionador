@@ -4,45 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Margin e Padding</title>
-  </head>
-  <body>
     <style>
+      /* Estilos aplicados a todos os parágrafos (p) */
       p {
-        /* Todos os lados  */
+        /* Define o background color amarelo para visualização */
+        background-color: yellow;
+        
+        /* PADDING */
+        /* Todos os lados têm 10px de espaçamento interno (padding) */
+        padding: 10px;
+
+        /* Em cima e em baixo 10px, esquerda e direita 25px */
+        padding: 10px 25px;
+
+        /* Configuração de padding para cada lado separadamente: 
+           - Em cima: 10px, 
+           - Direita: 25px, 
+           - Embaixo: 40px,
+           - Esquerda: 17px */
+        padding: 10px 25px 40px 17px;
+      }
+
+      /* Estilos de margem aplicados a todos os parágrafos (p) */
+      p {
+        /* MARGIN */
+        /* Todos os lados têm 10px de margem */
         margin: 10px;
 
-        /* Em cima e em baixo 10px,de um lado e do outro 25px. */
+        /* Em cima e em baixo 10px, esquerda e direita 25px */
         margin: 10px 25px;
 
-        /* Cada lado separadamente. Em cima 10, Direita 25, Embaixo 40, Esquerda 17.*/
+        /* Configuração de margem para cada lado separadamente:
+           - Em cima: 10px, 
+           - Direita: 25px, 
+           - Embaixo: 40px, 
+           - Esquerda: 17px */
         margin: 10px 25px 40px 17px;
       }
+
+      /* Estilos específicos aplicados ao parágrafo com id="p" */
       #p {
+        /* Background verde para fácil visualização */
         background-color: green;
+
+        /* Margens definidas individualmente */
         margin-top: 10px;
         margin-right: 10px;
         margin-bottom: 10px;
         margin-left: 10px;
       }
-
-      p {
-        background-color: yellow;
-      }
-      p {
-        /* Todos os lados  */
-        padding: 10px;
-
-        /* Em cima e em baixo 10px,de um lado e do outro 25px. */
-        padding: 10px 25px;
-
-        /* Cada lado separadamente. Em cima 10, Direita 25, Embaixo 40, Esquerda 17.*/
-        padding: 10px 25px 40px 17px;
-      }
     </style>
+  </head>
+  <body>
     <div>
-      <p>Paragrafo 1</p>
-      <p>Paragrafo 2</p>
-      <p id="p">Paragrafo 3</p>
+      <p>Parágrafo 1</p>
+      <p>Parágrafo 2</p>
+      <p id="p">Parágrafo 3 (com ID específico)</p>
     </div>
   </body>
 </html>

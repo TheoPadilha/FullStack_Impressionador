@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipos de Visualização</title>
+  </head>
+  <body>
+    <style>
+      /* 
+        Reset básico para garantir que margens e padding sejam consistentes em todos os elementos.
+        Removemos qualquer espaçamento padrão que os navegadores possam aplicar.
+      */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* 
+        Definimos o tamanho da fonte em 62.5% para facilitar o cálculo de tamanhos em rem.
+        1rem será equivalente a 10px, simplificando o layout responsivo.
+      */
+      html {
+        font-size: 62.5%;
+      }
+
+      /* 
+        Block:
+        - Ocupa toda a largura disponível, mesmo que o conteúdo não precise de todo esse espaço.
+        - Sempre quebra linha, ou seja, cada elemento com display "block" começa em uma nova linha.
+        - O modelo de caixa (box model) é aplicado: padding, margin e border afetam o layout normalmente.
+      */
+      h1 {
+        display: block;
+        font-size: 3.2rem; /* Tamanho da fonte de 32px */
+        height: 5rem;      /* Altura do elemento de 50px */
+        margin: 1rem;      /* Margem externa de 10px */
+        padding: 1rem;     /* Padding interno de 10px */
+      }
+
+      /* 
+        Inline:
+        - Ocupa apenas o espaço necessário para o conteúdo.
+        - Não quebra linha, permitindo que elementos inline fiquem lado a lado.
+        - O modelo de caixa não se aplica totalmente: padding e margin afetam apenas o eixo horizontal (direita/esquerda).
+      */
+      a {
+        font-size: 1.6rem; /* Tamanho da fonte de 16px */
+        display: inline;    /* Inline por padrão para elementos <a> */
+        margin: 2rem;       /* Margem horizontal (mas isso não funcionará adequadamente em um elemento inline) */
+      }
+
+      /* 
+        Inline-block:
+        - Combina características de block e inline.
+        - Ocupa apenas o espaço necessário para o conteúdo, como inline.
+        - Não quebra linha, permitindo ficar lado a lado, mas o modelo de caixa é aplicado completamente (padding, margin, e border funcionam em todas as direções).
+      */
+
+      /* none:
+        - O elemento não aparece na página.
+        - O espaço que ele ocuparia também desaparece completamente. É como se o elemento não existisse.
+      */
+
+      h2 {
+        font-size: 2.4rem; /* Tamanho da fonte de 24px */
+      }
+
+      p {
+        font-size: 1.6rem; /* Tamanho da fonte de 16px */
+      }
+
+      /* 
+        Estilizando o span dentro do parágrafo.
+        Um <span> é um elemento inline por padrão, então não quebra linha.
+      */
+      span {
+        font-style: italic; /* Texto em itálico */
+        color: red;         /* Texto na cor vermelha */
+      }
+    </style>
+
+    <div>
+      <h1>Título</h1>
+      <h1>Título</h1>
+      <h2>Subtítulo</h2>
+      <a href="">Acesse meu site</a>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt saepe
+        eaque, sequi eum doloremque asperiores, debitis quasi excepturi
+        accusamus rem nobis <b>a dolore unde eveniet distinctio</b> esse cum
+        expedita porro! Lorem ipsum dolor sit, amet consectetur adipisicing
+        elit. Alias dignissimos quas, rem eligendi minus cupiditate repellendus
+        mollitia cumque necessitatibus vel, nisi consequatur deserunt animi qui
+        nobis
+        <span
+          >tempora rerum voluptate? Nisi? Lorem ipsum dolor sit amet
+          consectetur</span
+        >
+        adipisicing elit. Ut, id quod laboriosam sint assumenda sunt pariatur
+        eveniet libero ad dolorem, nam exercitationem quam numquam. Quasi saepe
+        nisi consectetur illum numquam?
+      </p>
+    </div>
+  </body>
+</html>

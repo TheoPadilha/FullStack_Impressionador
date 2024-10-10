@@ -3,39 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Box-Models</title>
-  </head>
-  <body>
+    <title>Box Model</title>
     <style>
-
+      /*
+        Reset básico com o seletor universal (*):
+        - Remove as margens e o padding padrão de todos os elementos para garantir
+          maior controle sobre o layout.
+        - A propriedade `box-sizing: border-box` garante que o padding e a borda 
+          sejam incluídos no cálculo da largura e altura de um elemento, evitando
+          que o conteúdo "estoure" o tamanho do box.
+      */
       * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
+        box-sizing: border-box; /* Importante para controle de layout */
       }
+
+      /* 
+        Definindo um font-size base para 62.5% 
+        Isso facilita o cálculo de rem, onde 1rem = 10px
+      */
       html {
         font-size: 62.5%;
       }
-      
+
+      /* 
+        Estilização do div:
+        - Borda sólida de 2px com cor preta.
+        - Padding de 1rem (10px) para espaçamento interno.
+        - Altura do div é 20rem (200px).
+      */
       div {
-        border: solid 2px black;
-        padding: 1rem;
-        height: 20rem;
+        border: solid 2px black; /* Borda preta */
+        padding: 1rem; /* Espaçamento interno */
+        height: 20rem; /* Altura total do div (200px) */
       }
+
+      /* 
+        Título principal (h1):
+        - Espaçamento inferior de 2rem (20px)
+        - Tamanho da fonte: 3.2rem (32px)
+      */
       h1 {
         margin-bottom: 2rem;
         font-size: 3.2rem; /* 32px */
       }
 
+      /* 
+        Subtítulo (h2):
+        - Espaçamento inferior de 1rem (10px)
+        - Tamanho da fonte: 2.4rem (24px)
+      */
       h2 {
         margin-bottom: 1rem;
         font-size: 2.4rem; /* 24px */
       }
 
+      /* 
+        Parágrafo (p):
+        - Tamanho da fonte: 1.6rem (16px)
+      */
       p {
         font-size: 1.6rem; /* 16px */
       }
     </style>
+  </head>
+  <body>
     <div>
       <h1>Meu título</h1>
       <h2>Meu subtítulo</h2>
