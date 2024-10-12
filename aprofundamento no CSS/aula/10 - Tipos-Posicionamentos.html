@@ -4,63 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tipo de Posicionamento</title>
-  </head>
-  <body>
     <style>
+      /* Resetando as margens e paddings de todos os elementos para garantir consistência */
       * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box; /* Inclui padding e borda nas dimensões dos elementos */
       }
-      html {
-        font-size: 62, 5%;
-      }
-      /* Position: static , relative ,absolute , fixed , stick*/
 
+      /* Define o tamanho da fonte base para 10px (62.5% de 16px),
+         facilitando o uso de `rem` em cálculos de tamanho de fonte */
+      html {
+        font-size: 62.5%; /* 1rem = 10px */
+      }
+
+      /* Comentário geral sobre as diferentes opções de posicionamento no CSS:
+         - static: padrão, sem posicionamento especial
+         - relative: relativo à sua posição normal
+         - absolute: em relação ao elemento pai com position relative
+         - fixed: em relação à viewport
+         - sticky: comportamento híbrido entre relative e fixed */
+      
+      /* Tamanhos para títulos, usando `rem` para manter consistência com o tamanho base */
       h1 {
-        font-size: 3.2rem;
+        font-size: 3.2rem; /* 32px */
       }
+
       h2 {
-        font-size: 2.4rem;
+        font-size: 2.4rem; /* 24px */
       }
+
+      /* Define o estilo para links (`a`) e parágrafos (`p`) */
       a,
       p {
-        font-size: 1.6rem;
-        color: inherit;
-      }
-      p{
-        position: fixed;
-        bottom: 1rem;
-        right: 1rem;
-      }
-      .texto{
-        position: sticky;
-        top: 0rem;
+        font-size: 1.6rem; /* 16px */
+        color: inherit; /* Herda a cor do elemento pai */
       }
 
-      a:first-child{
-        /*Lembrar de colocar o posicionamento relativo o elemneto para qual você esta buscando o posicionamento absoluto.*/
-        /*O elemento em questao esta sendo posicionado absolutamente em relaçao a quem?A resposta deverá estar com posicionamento arelativo */
-        position: absolute;
-        bottom: 0;
-        right: 0;
+      /* Define o parágrafo para ficar fixo no canto inferior direito da tela (viewport) */
+      p {
+        position: fixed;
+        bottom: 1rem; /* 10px do fundo da tela */
+        right: 1rem; /* 10px da direita da tela */
       }
+
+      /* Classe que utiliza `position: sticky`. O elemento fica fixo no topo da página 
+         quando o usuário faz scroll até a posição do topo */
+      .texto {
+        position: sticky;
+        top: 0rem; /* Fica fixo no topo da viewport ao rolar a página */
+      }
+
+      /* O primeiro link dentro do `div` será posicionado de forma absoluta */
+      a:first-child {
+        position: absolute; /* Absoluto em relação ao `div` com `position: relative` */
+        bottom: 0; /* Alinhado ao fundo do div */
+        right: 0; /* Alinhado à direita do div */
+      }
+
+      /* O div atua como contêiner com posicionamento relativo.
+         Elementos filhos com `position: absolute` são posicionados em relação a este div */
       div {
-        position: relative;
-        /* top: 20rem;
-        left: 20rem;
-        bottom: 0;
-        right: 0;*/
-        height: 50rem;
-        width: 20rem;
-        background-color: green;
-        color: white;
+        position: relative; /* Necessário para o link `a:first-child` */
+        height: 50rem; /* Altura de 500px */
+        width: 20rem; /* Largura de 200px */
+        background-color: green; /* Cor de fundo verde */
+        color: white; /* Texto na cor branca */
       }
     </style>
+  </head>
+  <body>
     <div>
+      <!-- Primeiro link será posicionado no canto inferior direito do div -->
       <a href="">acesse meu site</a>
       <a href="">outro "acesse meu site"</a>
-      <p class="texto">texto</p>
+      <p class="texto">texto</p> <!-- Parágrafo com position sticky -->
     </div>
-    <p>Paragrafo</p>
+    <p>Parágrafo</p> <!-- Parágrafo fixo no canto inferior direito da tela -->
   </body>
 </html>
