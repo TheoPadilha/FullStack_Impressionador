@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipo de Posicionamento</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        font-size: 62, 5%;
+      }
+      /* Position: static , relative ,absolute , fixed , stick*/
+
+      h1 {
+        font-size: 3.2rem;
+      }
+      h2 {
+        font-size: 2.4rem;
+      }
+      a,
+      p {
+        font-size: 1.6rem;
+        color: inherit;
+      }
+      p{
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+      }
+      .texto{
+        position: sticky;
+        top: 0rem;
+      }
+
+      a:first-child{
+        /*Lembrar de colocar o posicionamento relativo o elemneto para qual você esta buscando o posicionamento absoluto.*/
+        /*O elemento em questao esta sendo posicionado absolutamente em relaçao a quem?A resposta deverá estar com posicionamento arelativo */
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      div {
+        position: relative;
+        /* top: 20rem;
+        left: 20rem;
+        bottom: 0;
+        right: 0;*/
+        height: 50rem;
+        width: 20rem;
+        background-color: green;
+        color: white;
+      }
+    </style>
+    <div>
+      <a href="">acesse meu site</a>
+      <a href="">outro "acesse meu site"</a>
+      <p class="texto">texto</p>
+    </div>
+    <p>Paragrafo</p>
+  </body>
+</html>
