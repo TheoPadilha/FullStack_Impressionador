@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+section {
+  padding: 2.4rem;
+}
+h1,
+figure {
+  margin-bottom: 3.2rem;
+}
+h2,
+a,
+ul {
+  margin-bottom: 2.4rem;
+}
+p,
+li {
+  margin-bottom: 0.6rem;
+}
+
+hr {
+  display: none;
+}
+
+h1::first-letter {
+  font-size: 6.4rem;
+}
+h1 {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 3.2rem;
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: 2.3rem;
+  line-height: 1.2;
+  margin-bottom: 1.8rem;
+}
+
+figcaption {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-left: 3.2rem;
+}
+
+a:hover,
+a:active {
+  color: #0588c4;
+}
+
+a:link,
+a:visited{
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-decoration: double;
+  text-decoration-line: underline;
+  display: inline-block;
+  color: #c44105;
+}
+ul {
+  margin-left: 2.4rem;
+}
+
+li {
+  color: #035276;
+  font-style: italic;
+}
+
+/* h1 span{
+    color: #0588c4; 
+} */
+
+.azul {
+  color: #0588c4;
+}
+
+.azuln {
+  color: #0588c4;
+  font-weight: bold;
+}
+
+em {
+  text-decoration: underline;
+  color: #0588c4;
+}
+.it {
+  color: #0588c4;
+  font-style: italic;
+}
+.Div-cond{
+  color: white;
+  background-color: #035276;
+  display: inline-block;
+  border-radius: 2rem;
+  box-shadow: 0 0 1.6rem 0.4rem rgb(0, 0, 0,15%);
+  padding: 2.4rem 3.2rem;
+}
+.Div-cond em ,
+.Div-cond .it{
+  color: #78d4ff;
+}
+
