@@ -65,7 +65,7 @@ a:active {
 }
 
 a:link,
-a:visited{
+a:visited {
   font-size: 2.4rem;
   font-weight: bold;
   text-decoration: double;
@@ -103,16 +103,33 @@ em {
   color: #0588c4;
   font-style: italic;
 }
-.Div-cond{
+.Div-cond {
   color: white;
   background-color: #035276;
   display: inline-block;
   border-radius: 2rem;
-  box-shadow: 0 0 1.6rem 0.4rem rgb(0, 0, 0,15%);
+  box-shadow: 0 0 1.6rem 0.4rem rgb(0, 0, 0, 15%);
   padding: 2.4rem 3.2rem;
+  transition: padding 0.3s ease;
 }
-.Div-cond em ,
-.Div-cond .it{
+.Div-cond:hover{
+  padding: 5rem;
+  
+}
+.Div-cond em,
+.Div-cond .it {
   color: #78d4ff;
+}
+
+.logozap,
+.logozap:hover {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 8.5rem;
+  transition: width 0.3s ease;
+}
+.logozap:hover{
+  width: 10rem;
 }
 
