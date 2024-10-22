@@ -1,0 +1,206 @@
+/* Global */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #404040;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+strong {
+  font-weight: 600;
+}
+h2 {
+  font-weight: 100;
+}
+.botao {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #404040;
+}
+
+/* Cabeçalho */
+
+.cabeçalho {
+  padding: 1.28rem 2.5rem;
+  box-shadow: 0 0.33rem 0.5rem rgba(0, 0, 0, 0.156);
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+nav ul {
+  list-style: none;
+}
+
+.item_lista a:hover {
+  color: #f60;
+}
+
+.item_lista a {
+  font-size: 1.4rem;
+  color: #112e61;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.item_lista.cont-filhos::after {
+  content: "\2bc6";
+}
+
+/* Hero */
+
+h1 {
+  font-size: 3.5rem;
+  color: #404040;
+  font-weight: 600;
+}
+
+.link_do_hero {
+  font-size: 2.4rem;
+  color: #fff;
+  background-color: darkorange;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Gratuitos */
+.Cor_font {
+  color: #404040;
+}
+.titcontg {
+  color: #fff;
+  background-color: #7a40be;
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+.link_font {
+  color: #404040;
+  text-decoration: none;
+  font-size: 1.9rem;
+}
+
+.font2 {
+  font-size: 3.5rem;
+  color: #404040;
+  font-weight: 400;
+}
+.realce-roxo-rome {
+  color: #7a40be;
+  font-weight: 600;
+}
+/* h2.font2 span {
+    color: #7a40be;
+    font-weight: 600;
+    } */
+
+/* Diferenciais */
+.fig_amarela {
+  background-color: gold;
+}
+p.p_diferenciais,
+.dados,
+.pri_text,
+.tam-p {
+  font-size: 1.9rem;
+}
+
+h3.tit_diferenciais {
+  color: #005e88;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+/* .font2 {
+  font-size: 35px;
+  color: #404040;
+  font-weight: 400; */
+
+.empresa {
+  color: #005e88;
+  text-decoration: none;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+/* seção oq falam */
+span.oqfalam-h2,
+.font2 strong {
+  font-weight: 600;
+}
+.h2-oqfalam,
+.cadastro {
+  font-size: 3.5rem;
+}
+/* Na midia */
+
+.h3-na_midia {
+  font-size: 3.5rem;
+  font-weight: 100;
+}
+
+/* Blog # */
+.h2-blog {
+  font-size: 3.5rem;
+  color: #fff;
+  background-color: darkorange;
+}
+
+.link_pg_blog {
+  color: orange;
+  text-decoration: none;
+  font-weight: 600;
+}
+.link_video {
+  font-size: 2.4rem;
+  color: #404040;
+  text-decoration: none;
+  font-weight: 600;
+}
+.p-blog {
+  font-size: 1.7rem;
+}
+.p_format_blog {
+  font-size: 1.5rem;
+}
+/* como # pode ajudar */
+
+.h2_ajuda {
+  background-color: #008ff7;
+  color: #fff;
+  font-size: 3.5rem;
+}
+
+.links_txt {
+  color: #008ff7;
+  font-weight: 600;
+}
+
+/* roda pé*/
+.p22 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.p20 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.p18 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.a16 {
+  font-size: 1.6rem;
+  color: #1a77a4;
+}
