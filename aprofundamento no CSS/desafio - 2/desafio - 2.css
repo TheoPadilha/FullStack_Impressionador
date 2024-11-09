@@ -16,6 +16,7 @@ body {
   color: #404040;
   font-size: 1.6rem;
   line-height: 1.4;
+  background-color: #f4f5f7;
 }
 
 strong {
@@ -34,6 +35,7 @@ h2 {
   border-radius: 2.5rem;
   padding: 0.4rem 3.5rem;
   background-image: linear-gradient(180deg, #196c9f, #1a80a7);
+  border: 0;
   border-bottom: solid 0.4rem #14577f;
   border-right: solid 0.4rem #14577f;
 
@@ -43,6 +45,7 @@ h2 {
   background-image: none;
   color: brown;
   background-color: white;
+  border: 0;
   border-bottom: solid 0.4rem white;
   border-right: solid 0.4rem white;
   box-shadow: 0 0 0.33rem 0.3rem rgba(0, 0, 0, 0.156);
@@ -239,10 +242,6 @@ h1 {
   padding: 7rem 6rem;
 }
 
-.secao-diferenciais {
-  background-color: #f4f5f7;
-}
-
 .container-diferencias {
   border-radius: 5rem;
   background-color: white;
@@ -423,9 +422,6 @@ span.oqfalam-h2,
 
 /* Blog # */
 
-.secao-blog {
-  background-color: #f4f5f7;
-}
 .container-blog {
   box-shadow: inset 0 0.1rem 1rem rgba(0, 0, 0, 30%);
   border-radius: 4.7rem;
@@ -482,9 +478,19 @@ span.oqfalam-h2,
   line-height: 1.5;
 }
 /* como # pode ajudar */
-
+.secao-comoajudar {
+  padding: 0;
+}
 .secao-ajuda1 {
+  padding: 7.63rem 2rem;
   background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUND-banner-07.png);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.ajuda-part2 {
+  background-color: #f4f5f7;
+  padding: 5rem;
 }
 .h2_ajuda {
   display: inline-block;
@@ -497,9 +503,10 @@ span.oqfalam-h2,
 }
 
 .opcoes-ajuda {
-  background-color: white;
+  background-color: #f9f9f9;
   padding: 3rem;
   border-radius: 2rem;
+  box-shadow: inset 0 0 1rem 0.3rem rgba(0, 0, 0, 15%);
 }
 
 .links_txt {
@@ -507,20 +514,133 @@ span.oqfalam-h2,
   font-weight: 600;
 }
 
+.links_txt:hover {
+  color: #0053b3;
+}
+
+/* cadastro minicurso */
+
+.secao-minicurso {
+  background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUND-banner-08_1.png);
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.botao-cadastro {
+  width: 17.4rem;
+  height: 5.4rem;
+  font-size: 2.4rem;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 3rem;
+  padding: 1rem 3rem;
+  border: none;
+  border-bottom: solid 0.4rem #664a10;
+  border-right: solid 0.4rem #664a10;
+  background-color: #ffba29;
+}
+
+.botao-cadastro:hover {
+  border: solid 0.2rem ;
+  border-color: #ffba29;
+}
+
+.input-minicurso {
+  padding: 1.02rem;
+  background-color: white;
+  box-shadow: inset 0 0 1rem 0.01rem rgba(0, 0, 0, 20%);
+  border: 0;
+  border-radius: 0.8rem;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherite;
+}
+.input-minicurso::placeholder {
+  color: #797979;
+}
+
+.input-minicurso:focus {
+  outline: none;
+}
+
 /* roda pé*/
+.logo-hashtag {
+  width: 18rem;
+}
+
 .p22 {
   font-size: 2.2rem;
   font-weight: 600;
 }
 .p20 {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 .p18 {
-  font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 .a16 {
   font-size: 1.6rem;
   color: #1a77a4;
+}
+
+.iconzap {
+  position: fixed;
+  right: 1rem;
+  bottom: 0.8rem;
+  width: 8.5rem;
+}
+
+.iconzap img{
+  width: 100%;
+}
+
+.iconzap:hover{
+  transform: translate(0.5rem, 0.5rem);
+}
+
+
+.rodape svg {
+  width: 2.4rem;
+}
+
+.icon-tranparente:hover svg {
+  fill: #f60;
+  stroke: #f60;
+}
+
+.icon-tranparente {
+  color: transparent !important;
+}
+
+.rodape a:hover {
+  color: #f60;
+}
+
+.aside {
+  display: inline-block;
+  background-color: white;
+  box-shadow: inset 0 0 1rem 0.1rem rgba(0, 0, 0, 15%);
+  padding: 3rem;
+  border-radius: 2rem;
+}
+.botaorodape {
+  width: 13rem;
+  height: 5rem;
+  text-decoration: none;
+  font-size: 2.4rem;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 2.5rem;
+  padding: 1rem 3rem;
+  border: none;
+  border-bottom: solid 0.4rem #14577f;
+  border-right: solid 0.4rem #14577f;
+  background-color: #1a77a4;
+}
+
+.botaorodape:hover {
+  border: solid 0.2rem;
 }
