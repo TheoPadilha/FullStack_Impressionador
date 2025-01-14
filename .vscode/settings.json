@@ -1,6 +1,7 @@
 {
-    "livePreview.defaultPreviewPath": "/Introdução ao HTML/index.html",
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+  "livePreview.defaultPreviewPath": "/Introdução ao HTML/index.html",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveServer.settings.port": 5501
 }
