@@ -13,26 +13,29 @@ body {
   line-height: 1.4;
 }
 
+main{
+  display: flex;
+  flex-flow: column;
+  gap: 6rem;
+  padding: 2rem;
+}
 section {
-  padding: 2.4rem;
-}
-h1,
-figure {
-  margin-bottom: 3.2rem;
-}
-h2,
-a,
-ul {
-  margin-bottom: 2.4rem;
-}
-p,
-li {
-  margin-bottom: 0.6rem;
+  display: flex;
+  flex-flow: column;
+  gap: 5rem;
+  align-items:center ;
 }
 
-hr {
-  display: none;
+figure img{
+  width: 30rem;
 }
+
+figure{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
 
 h1::first-letter {
   font-size: 6.4rem;
@@ -50,7 +53,6 @@ h2 {
 h3 {
   font-size: 2.3rem;
   line-height: 1.2;
-  margin-bottom: 1.8rem;
 }
 
 figcaption {
@@ -113,7 +115,7 @@ em {
   transition: padding 0.3s ease;
 }
 .Div-cond:hover{
-  padding: 5rem;
+  padding: 4rem;
   
 }
 .Div-cond em,
@@ -132,4 +134,29 @@ em {
 .logozap:hover{
   width: 10rem;
 }
+.cont-figure{
+  display: flex;
+  gap: 5rem;
+}
+.cont-preço-cond{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 3rem;
+}
 
+.container-preço, .Div-cond{
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}
+
+.cont-topicos{
+  display: flex;
+  gap: 5rem;
+}
+.cont-lista{
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}
