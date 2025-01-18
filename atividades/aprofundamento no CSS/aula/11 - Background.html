@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background</title>
+  </head>
+  <body>
+    <style>
+      div {
+        /* Gradiente linear: transição de preto para amarelo de cima para baixo (0 graus) */
+        background-image: linear-gradient(0deg, rgb(0, 0, 0), rgb(245, 204, 0));
+        color: white;
+        padding: 10px;
+        padding-top: 1px;
+        border-radius: 20px; /* Borda arredondada */
+      }
+
+      .div {
+        /* Gradiente horizontal de roxo para ciano (90 graus) */
+        background-image: linear-gradient(
+          90deg,
+          rgb(131, 5, 131),
+          rgb(0, 245, 225)
+        );
+      }
+
+      .div_ {
+        margin: 10px;
+
+        /* Imagem de fundo */
+        background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUN-banner-01.png);
+
+        /* Posiciona a imagem centralizada */
+        background-position: 50%;
+
+        /* Ajusta a imagem para cobrir todo o div */
+        background-size: cover;
+
+        /* Evita que a imagem se repita */
+        background-repeat: no-repeat;
+
+        color: black;
+      }
+    </style>
+
+    <div>
+      <h1>Título</h1>
+      <h2>Subtítulo</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+        officia. Facere non repellendus impedit maiores voluptatem corporis.
+        Earum, voluptates, nobis ex facilis, accusamus maxime animi blanditiis
+        dolore quae nihil sunt.
+      </p>
+
+      <div class="div">
+        <h1>Título</h1>
+        <h2>Subtítulo</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+          officia. Facere non repellendus impedit maiores voluptatem corporis.
+          Earum, voluptates, nobis ex facilis, accusamus maxime animi blanditiis
+          dolore quae nihil sunt.
+        </p>
+      </div>
+    </div>
+
+    <div class="div_">
+      <h1>O Theo Eh MUITO bonitao</h1>
+      <p>A namorada dele concordaaaaaaa.....</p>
+    </div>
+  </body>
+</html>

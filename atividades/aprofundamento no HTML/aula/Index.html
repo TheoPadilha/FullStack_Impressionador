@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tag Avançadas</title>
+  </head>
+  <body>
+    <!-- CITAÇÕES -->
+
+    <!-- blockquote: citação em bloco (geralmente textos longos). Pode usar o atributo cite para indicar a fonte. -->
+    <blockquote cite="https://br.lipsum.com/">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero molestias
+      totam consectetur iste animi nemo dolorem, labore illo iure voluptatum
+      voluptas sit.
+    </blockquote>
+
+    <!-- q: citação curta em linha. Aspas são adicionadas automaticamente. -->
+    <p>
+      Segundo ciclano
+      <q cite="https://br.lipsum.com/">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      </q>
+    </p>
+
+    <!-- cite: para citar a fonte de uma obra ou autor. -->
+    <p>
+      Segundo <a href="https://br.lipsum.com"><cite>beltrano</cite></a
+      >:
+    </p>
+
+    <!-- abbr: marca abreviações e exibe uma explicação completa ao passar o mouse. -->
+    <p>
+      O <abbr title="HyperText Markup Language">HTML</abbr> é uma linguagem
+      utilizada na criação de sites para a web.
+    </p>
+
+    <!-- address: usado para informações de contato, como telefone e endereço. -->
+    <address>
+      <p>Telefone: 47 989105580</p>
+      <p>Endereço: Rua abc xyz</p>
+    </address>
+
+    <!-- code: exibe trechos de código. Use junto com <pre> para manter formatação. -->
+    <pre><code>def escrever(): 
+    print('Hello World')
+escrever()</code></pre>
+
+    <!-- pre: preserva espaços e quebras de linha. Ótimo para códigos ou textos que exigem formatação específica. -->
+    <pre><p>nome = "theo"
+     </p></pre>
+
+    <!-- var: usada para representar uma variável ou expressão matemática. -->
+    <p>No código acima, a variável <var>nome</var> é igual a theo.</p>
+
+    <!-- samp: exibe texto que representa a saída de um computador. -->
+    <samp>Resposta de um computador.</samp>
+
+    <!-- kbd: indica as teclas que o usuário deve pressionar no teclado. -->
+    <p>Você deveria clicar nas teclas <kbd>CTRL+SHIFT+ESC</kbd>.</p>
+
+    <!-- time: usada para representar datas ou horas. O atributo datetime facilita o processamento. -->
+    <time datetime="2024-09-20">Dia 20 de setembro de 2024</time>
+  </body>
+</html>

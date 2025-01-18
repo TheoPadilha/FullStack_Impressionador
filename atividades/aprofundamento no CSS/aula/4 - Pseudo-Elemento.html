@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-Elemento</title>
+    <style>
+      /* Estiliza a primeira letra do parágrafo */
+      p::first-letter {
+        font-size: 50px; /* Aumenta o tamanho da primeira letra */
+        font-weight: 700; /* Torna a primeira letra negrito */
+      }
+
+      /* Estiliza a primeira linha do parágrafo */
+      p::first-line {
+        color: teal; /* Altera a cor da primeira linha para teal */
+      }
+
+      /* Adiciona conteúdo antes do parágrafo */
+      p::before {
+        content: "Texto que vai entrar no início: "; /* Insere este texto no início do parágrafo */
+      }
+
+      /* Adiciona conteúdo após o parágrafo */
+      p::after {
+        content: " Texto que vai entrar no final"; /* Insere este texto no final do parágrafo */
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, veniam
+      rerum, corrupti numquam commodi quidem iste beatae aliquid aliquam id,
+      voluptates nostrum repudiandae molestiae laboriosam ullam atque neque
+      minus aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Magni nihil maiores illum nisi ipsum quasi nemo consequuntur, provident
+      ducimus error, corporis velit. Cumque officiis nostrum aspernatur minima
+      pariatur aliquam veritatis?
+    </p>
+  </body>
+</html>

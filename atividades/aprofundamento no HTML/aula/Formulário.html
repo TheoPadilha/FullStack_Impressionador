@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h2>Newsletter</h2>
+        <form action="">
+          <div>
+            <label for="name">Nome</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              pattern="[a-zA-Z]+"
+              title="Esse input so aceita letras"
+              placeholder="Seu primeiro nome"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="name">E-mail</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Seu melhor e-mail"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="phone">Telefone</label>
+            <input
+              id="phone"
+              name="phone"
+              type="number"
+              placeholder="Seu telefone"
+              required
+            />
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
