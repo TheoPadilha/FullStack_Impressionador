@@ -5,7 +5,8 @@
 
 let msg = "ola,"
 let nome = 'Theo'
-let msg2 = `ola ${nome} `
+let msg3 = "Seja Bem vindo"
+let msg2 = `ola ${nome} ${msg3}`
 
 console.log(msg2)
 console.log(msg + nome + ", Qual a sua idade")
@@ -17,4 +18,4 @@ console.log(nome[0])
 let num = 27
 let num1 = -50
 let decimal = 7.2
-// Infinity NaN
+// Infinity e NaN

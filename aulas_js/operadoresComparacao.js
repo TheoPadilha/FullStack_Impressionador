@@ -13,4 +13,7 @@ console.log(10 >= 10);
 let senha = 123;
 let senhaDigitada = 321;
 let comparacao = senha === senhaDigitada;
+
+
 console.log("Aqui é a senha : " + comparacao);
+console.log(falso)

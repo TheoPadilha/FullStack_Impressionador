@@ -5,7 +5,7 @@ let segundoValor = 20;
 console.log(valor + segundoValor);
 
 let msg = "12";
-console.log(msg + valor);
+console.log(msg + valor); // concatenação
 
 // Subtração
 console.log(valor - segundoValor);
@@ -31,8 +31,10 @@ console.log(resultado);
 // Incremento ++ (Adicionar o valor 1) ; Descremento -- (diminuir o valor 1)
 let controle = 0;
 console.log(controle++);
-console.log(controle)
-// ou 
-console.log(++controle)
+console.log(controle);
+// ou
+console.log(++controle);
 
-
+for (let i = 1; i <= 10; ++i) {
+  console.log(i);
+}

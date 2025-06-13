@@ -24,6 +24,7 @@ nome = "Vera"; // declaração esta incorreta
 console.log(nome);
 
 // TIPO LET
+
 let mensagem = "Ola impressionador";
 console.log(mensagem);
 
@@ -36,6 +37,7 @@ cor = "azul"; // reatribuição correto
 console.log(cor);
 
 // TIPO CONST
+
 const outraMensagem = "Ola denovo";
 console.log(outraMensagem);
 
@@ -47,6 +49,27 @@ console.log(outraMensagem);
 
 //PI = 3,14
 
+// Redeclaração
+
+var msg = "ola mundo";
+console.log(msg);
+var msg = "oi";
+console.log(msg);
+msg = "ola";
+console.log(msg);
+
+// Reatribuição - Mutabilidade
+
+let a = "abc";
+console.log(a);
+a = "cba";
+console.log(a);
+
+// Hoisting
+
+let b;
+console.log(b);
+
 // Visibilidade
 {
   console.log("isso eh um bloco");
@@ -55,4 +78,3 @@ console.log(outraMensagem);
   console.log(idade);
   console.log(dois); // console.log(idade),(dois) não funciona fora das chaves
 }
-

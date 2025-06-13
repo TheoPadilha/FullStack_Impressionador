@@ -3,8 +3,9 @@
 
 let cidade = "Balneario Camboriú";
 let população = 200000;
-
+let nome = "Theo"
 console.log(
   "á população da cidade de " + cidade + " é de " + população + " habitanates"
 );
 console.log(`A cidade de ${cidade} tem ${população} habitantes`);
+console.log(`Seja bem vindo ${nome}! `)
