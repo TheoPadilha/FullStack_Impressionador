@@ -1,27 +1,37 @@
-//  UNDEFINED
+// ==================================================
+// 🔥 UNDEFINED em JavaScript
+// ==================================================
 
-let produto;
+// Variável declarada, mas sem valor atribuído → undefined
+let produto; // declarada, sem valor
+let num = undefined; // explicitamente atribuída undefined
 
-let num = undefined;
+console.log(typeof produto); // "undefined" → tipo da variável sem valor
+console.log(num); // undefined → valor da variável
 
-console.log(typeof produto)
-console.log(num)
+// ==================================================
+// 🔥 NULL em JavaScript
+// ==================================================
 
-// NULL
-let lista = null
-console.log(lista)
-console.log(typeof lista)
+// null é um valor especial que representa "ausência intencional de valor"
+let lista = null;
 
+console.log(lista); // null → valor explícito de vazio
+console.log(typeof lista); // "object" → comportamento histórico do JS
 
+// IMPORTANTE:
+// typeof null retorna "object" por uma particularidade antiga do JavaScript
+// mas null não é um objeto de verdade, é só um valor especial
 
-// Outros
+// ==================================================
+// 🔥 Outros tipos básicos e uso do typeof
+// ==================================================
 
+let a = "123"; // string
+console.log(typeof a); // "string"
 
-let a = '123'
-console.log(typeof a)
+let b = 123; // number
+console.log(typeof b); // "number"
 
-let b = 123
-console.log(typeof b)
-
-let c = true
-console.log(typeof c)
+let c = true; // booleano
+console.log(typeof c); // "boolean"

@@ -1,80 +1,126 @@
-console.log("Hello word"); // console.log = exibir
-console.log("bem vindo ao curso");
+// ==================================
+// 🔹 Console.log — Saída no Console
+// ==================================
 
-// Declaração de variaveis
+console.log("Hello World"); // Exibe a mensagem no console
+console.log("Bem vindo ao curso");
 
-/* Declaração do tipo  + Nome da variavel = informação armazenada
- (var , let , const) + nome da variavel = "texto" , 12 , [] */
+// ==================================
+// 🔸 Declaração de Variáveis
+// ==================================
+// Sintaxe: tipo + nome = valor
+// Tipos: var, let, const
 
-//  var: Declara variáveis com escopo de função ou global. Permite redeclaração e sofre hoisting (movida para o topo do escopo). Não deve ser usada em código moderno.
+/* 
+- var   → Escopo global ou de função. 
+          Permite redeclaração e sofre hoisting.
+          ⚠️ Não recomendado para código moderno.
 
-// let: Declara variáveis com escopo de bloco. Não permite redeclaração no mesmo escopo, mas pode ser atualizada. Ideal para valores mutáveis.
+- let   → Escopo de bloco (entre chaves {}). 
+          ✅ Permite reatribuição (mudar valor).
+          🚫 Não permite redeclaração no mesmo escopo.
 
-// const: Declara variáveis com escopo de bloco. Não permite atualização ou redeclaração. Ideal para valores constantes ou referências de objetos/arrays.
+- const → Escopo de bloco.
+          🚫 Não permite reatribuição nem redeclaração.
+          ✅ Usado para valores fixos ou constantes.
+*/
 
-// TIPO VAR
+// ==================================
+// 🔸 Exemplo com VAR (evite usar var)
+// ==================================
 
 var nome = "Theo";
-console.log(nome);
+console.log(nome); // Theo
 
-var nome = "Mih";
-console.log(nome);
+var nome = "Mih"; // Permite redeclarar (problema no código moderno)
+console.log(nome); // Mih
 
-nome = "Vera"; // declaração esta incorreta
-console.log(nome);
+nome = "Vera"; // Permite reatribuição
+console.log(nome); // Vera
 
-// TIPO LET
+// ==================================
+// 🔸 Exemplo com LET (o mais usado)
+// ==================================
 
-let mensagem = "Ola impressionador";
+let mensagem = "Olá mundo";
 console.log(mensagem);
 
-// declaração do tipo let
 let cor = "vermelho";
 console.log(cor);
 
-// Redeclaração não eh permitido = let cor "Azul"
-cor = "azul"; // reatribuição correto
-console.log(cor);
+// 🚫 Não podemos redeclarar com let no mesmo escopo
+// let cor = "azul"; // ❌ ERRO
 
-// TIPO CONST
+// ✅ Podemos reatribuir
+cor = "azul";
+console.log(cor); // azul
 
-const outraMensagem = "Ola denovo";
+// ==================================
+// 🔸 Exemplo com CONST
+// ==================================
+
+const outraMensagem = "Olá de novo";
 console.log(outraMensagem);
 
-// Tipo const não pode ser redeclarada - ou criada novamente
-// Não podemos reatribuir o valor - outraMensagem = oi?
+// 🚫 Não podemos reatribuir com const
+// outraMensagem = "oi"; // ❌ ERRO
 
-// outraMensagem = "oi?"
-// console.log(outraMensagem)
+// 🚫 Não podemos redeclarar com const
+// const outraMensagem = "oi"; // ❌ ERRO
 
-//PI = 3,14
+// 📌 Exemplo prático:
+const PI = 3.14; // Valor fixo
+console.log(PI);
 
-// Redeclaração
+// ==================================
+// 🔸 Redeclaração com VAR
+// ==================================
 
-var msg = "ola mundo";
+var msg = "Olá mundo";
 console.log(msg);
-var msg = "oi";
-console.log(msg);
-msg = "ola";
+
+var msg = "Oi"; // Permite redeclarar
 console.log(msg);
 
-// Reatribuição - Mutabilidade
+msg = "Olá novamente"; // Permite reatribuir
+console.log(msg);
+
+// ==================================
+// 🔸 Reatribuição com LET (válido)
+// ==================================
 
 let a = "abc";
 console.log(a);
-a = "cba";
+
+a = "cba"; // Válido — apenas muda o valor
 console.log(a);
 
-// Hoisting
+// ==================================
+// 🔸 Hoisting (içamento)
+// ==================================
+
+// ✅ VAR sofre hoisting (é movido para o topo do código)
+// ❌ LET e CONST não sofrem hoisting (dão erro se acessados antes da declaração)
 
 let b;
-console.log(b);
+console.log(b); // undefined (foi declarada, mas não tem valor ainda)
 
-// Visibilidade
+// ==================================
+// 🔸 Escopo e Visibilidade
+// ==================================
+
 {
-  console.log("isso eh um bloco");
+  console.log("Isso é um bloco");
+
   let idade = 22;
   const dois = 2;
-  console.log(idade);
-  console.log(dois); // console.log(idade),(dois) não funciona fora das chaves
+
+  console.log(idade); // 22
+  console.log(dois); // 2
+
+  // As variáveis idade e dois só existem dentro deste bloco
 }
+
+// 🚫 Fora do bloco, essas variáveis não existem
+// console.log(idade); // ❌ ERRO
+// console.log(dois);  // ❌ ERRO
