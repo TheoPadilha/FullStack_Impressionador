@@ -68,21 +68,5 @@ console.log(Number.isInteger(10)); // 🔸 Verifica se é inteiro
 console.log(parseInt("10")); // 🔸 Converte string para inteiro
 console.log(parseFloat("10.5")); // 🔸 Converte string para float
 
-// Anotações aula
-
-function saudacao(nome) {
-  return `Ola ${nome}`;
-}
-console.log(saudacao("Theo"));
-
-const pessoaa = {
-  nome: "Theo",
-  saudacaoo: function () {
-    return `Ola ${pessoa.nome}`;
-  },
-};
-
-console.log(pessoaa.saudacaoo())
-// ===========================
 // ✅ Fim dos métodos mais usados
-// ===========================
+
